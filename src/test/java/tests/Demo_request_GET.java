@@ -12,6 +12,7 @@ public class Demo_request_GET
     @Test
     void getWeatherDetails()
     {
+        //--------------------------------------------------------------------------//
         //Specify base URI
         RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city/";
 
@@ -34,6 +35,7 @@ public class Demo_request_GET
         String statusLine = response.getStatusLine();
         System.out.println("Status line is: " + statusLine);
         Assert.assertEquals(statusLine, "HTTP/1.1 200 OK"); // validation
+        //------------------------------------------------------------------------//
 
 
     }
